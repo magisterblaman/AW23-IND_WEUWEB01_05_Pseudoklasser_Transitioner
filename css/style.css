@@ -1,0 +1,47 @@
+a {
+	font-weight: 700;
+
+	transition-property: background-color, font-size;
+	transition-duration: 0.5s;
+}
+
+a:visited {
+	color: khaki;
+}
+
+a:link {
+	color: brown;
+	font-size: 30px;
+}
+
+a:active {
+	font-size: 50px;
+}
+
+a:hover {
+	background-color: blueviolet;
+	font-size: 10px;
+}
+
+div {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+
+	transition-property: width, height, background-color, transform;
+	transition-duration: 2s, 1s, 0.5s, 2s;
+	transition-timing-function: 
+		cubic-bezier(0, 1.29, 1, -0.33), 
+		ease-in-out, 
+		cubic-bezier(0, 1.29, 1, -1.01),
+		linear;
+	transition-delay: 0, 1s, 0, 0;
+}
+
+div:hover {
+	background-color: green;
+	width: 200px;
+	height: 200px;
+
+	transform: rotate(180deg);
+}
